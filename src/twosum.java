@@ -13,6 +13,7 @@ public class twosum {
             System.out.println("Элемент массива № "+i+" : ");
             inp[i] = sc.nextInt();
         }
+        /*
         for( int i = 1; i<(n-1) ; i++){
             if( target == inp[i]+inp[i-1] ){
                 System.out.println("Решение : ");
@@ -25,6 +26,14 @@ public class twosum {
                 System.out.println("["+i+";"+(i+1)+"]");
                 rez = 1;
                 break;
+            }
+        } */
+        for( int i = 1; i<n; i++ ){
+            for( int j = 0; j<n; j++ ){
+                if( (inp[i] + inp[j]) == target ){
+                    System.out.println("["+i+";"+j+"]");
+                    rez = 1;
+                }
             }
         }
         if (rez == 0){
