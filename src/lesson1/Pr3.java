@@ -2,7 +2,7 @@ package lesson1;
 
 import java.util.Scanner;
 
-public class pr3 {
+public class Pr3 {
     public static void main(String[] args){
         Scanner inp = new Scanner(System.in);
         int a = inp.nextInt();
