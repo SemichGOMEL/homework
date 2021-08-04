@@ -3,7 +3,7 @@ package lesson1;
 import java.util.Scanner;
 
 public class twosum {
-    public static void main(String[] args){
+        public static void main(String[] args){
         int rez = 0;
         Scanner sc = new Scanner(System.in);
         System.out.println("Размер массива : ");

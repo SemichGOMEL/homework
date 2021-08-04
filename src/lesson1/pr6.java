@@ -10,40 +10,14 @@ public class pr6 {
         if(a > 9){
             c = a % 10;
         }
-        switch (c){
-            case 0:
-                System.out.println(a+" программистов");
-                break;
-            case 1:
-                System.out.println(a+" программист");
-                break;
-            case 2:
-                System.out.println(a+" программиста");
-                break;
-            case 3:
-                System.out.println(a+" программиста");
-                break;
-            case 4:
-                System.out.println(a+" программиста");
-                break;
-            case 5:
-                System.out.println(a+" программистов");
-                break;
-            case 6:
-                System.out.println(a+" программистов");
-                break;
-            case 7:
-                System.out.println(a+" программистов");
-                break;
-            case 8:
-                System.out.println(a+" программистов");
-                break;
-            case 9:
-                System.out.println(a+" программистов");
-                break;
-            case 10:
-                System.out.println(a+" программистов");
-                break;
+        if( c == 1 ){
+            System.out.println(a+" Программист");
+        } else if( (c >= 2) && (c <= 4) ){
+            System.out.println(a+" Программиста");
+        } else if( ((c >= 5) && (c <= 10)) || (c == 0) ){
+            System.out.println(a+" Программистов");
         }
     }
 }
+
+
