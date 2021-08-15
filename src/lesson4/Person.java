@@ -61,11 +61,14 @@ class Computer {
         this.res = res;
     }
 
-    public void test() {
+    public boolean test()  {
         if (this.k >= this.res) {
             System.out.println("Сгорел от перегрева");
             System.out.println("error.");
-            System.exit(0);
+//            System.exit(0);
+            return true;
         }
+
+        return false;
     }
 }

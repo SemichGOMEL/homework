@@ -10,7 +10,10 @@ public class OOP {
         lenovo.k = 0;
         while (true){
             lenovo.turn();
-            lenovo.test();
+            boolean resAreEnded = lenovo.test();
+            if (resAreEnded){
+                break;
+            }
             lenovo.off();
             lenovo.test();
         }
