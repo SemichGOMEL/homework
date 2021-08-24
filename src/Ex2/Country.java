@@ -1,12 +1,12 @@
 package Ex2;
 
 public enum Country {
-    POLAND(714), RUSSIA(4403), USA(8560);
-    private int arrange;
-    Country(int arrange){
-        this.arrange = arrange;
+    POLAND("LOW"), RUSSIA("LOW"), USA("LOW"), PITER("LOW"), UKRAINE("MEDIUM"), SIRIYA("HIGH");
+    private String dang;
+    Country(String dang){
+        this.dang = dang;
     }
-    public int getArrange(){
-        return this.arrange;
+    public String getArrange(){
+        return this.dang;
     }
 }

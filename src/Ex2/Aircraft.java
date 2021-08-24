@@ -11,12 +11,4 @@ public class Aircraft extends Air{
             System.out.println("Не хватает "+(two-aircraft.passang)+" мест.");
         }
     }
-    public void flight(Aircraft aircraft,Country country){
-        aircraft.calcrange();
-        if(this.range>=country.getArrange()){
-            System.out.println("полёт возможен");
-        }else{
-            System.out.println("невозможно совершить данный полёт");
-        }
-    }
 }

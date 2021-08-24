@@ -25,7 +25,7 @@ public class Air {
         this.info = "транспорт посажен.";
     }
     public void takeof(){
-        this.info = "транспорт в воздух.";
+        this.info = "транспорт в воздухе.";
     }
     public void info(String name){
         System.out.println(name+" "+this.info);

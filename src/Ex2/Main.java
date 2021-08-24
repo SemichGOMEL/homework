@@ -1,14 +1,37 @@
 package Ex2;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
+
+import static java.lang.Math.sqrt;
+
 public class Main {
     static Aircraft[] a = new Aircraft[3];
     public static void main(String[] args) {
+        Point flight1 = new Point(0,0);
+        Point flight2 = new Point(0,0);
+        Map<Country, Point> map = new HashMap<Country, Point>();
+        map.put(Country.USA,new Point(12,20));
+        map.put(Country.SIRIYA,new Point(18,22));
+        map.put(Country.RUSSIA,new Point(33,44));
+        map.put(Country.UKRAINE,new Point(5,3));
+        map.put(Country.PITER,new Point(4,40));
         a[0] = new Aircraft(350,2000,45,245,5,"Airbus");
         a[1] = new Aircraft(1000,8000,70,600,20,"Ил76");
         a[2] = new Aircraft(3000,12320,99,950,25,"як40");
         a[1].calcrange();
-        System.out.println(a[0]);
+        flight2 = map.get(Country.RUSSIA);
+        double rangeflight = sqrt((flight2.x-flight1.x)*(flight2.x-flight1.x)+(flight2.y-flight1.y)*(flight2.y-flight1.y));
+        a[0].calcrange();
+        if (rangeflight<=a[0].range){
+            System.out.println("Полёт в москву доступен!");
+            flight1 = flight2;
+        }else{
+            System.out.println("Полёт в москву не доступен!");
+            flight1 = flight2;
+        }
+        /* System.out.println(a[0]);
         System.out.println("Дальность полёта - "+a[1].range+" км");
         System.out.println("Грузоподъемность и вместимость - "+a[0].allweight());
         a[0].landing();
@@ -26,7 +49,7 @@ public class Main {
         int numb = sc.nextInt();
         int pass = sc.nextInt();
         a[0].loading(a[numb],pass);
-        a[0].flight(a[0],Country.RUSSIA);
+         */
     }
     public static void sort(){
         double max = 0; int n = 0;
