@@ -1,7 +1,6 @@
 package Ex2;
 
 import java.util.Scanner;
-
 public class Main {
     static Aircraft[] a = new Aircraft[3];
     public static void main(String[] args) {
@@ -23,6 +22,11 @@ public class Main {
         int r = sc.nextInt();
         int b = sc.nextInt();
         find(r,b);
+        System.out.println("Номер самолёта для загрузки пассажиров и количество пассажиров:");
+        int numb = sc.nextInt();
+        int pass = sc.nextInt();
+        a[0].loading(a[numb],pass);
+        a[0].flight(a[0],Country.RUSSIA);
     }
     public static void sort(){
         double max = 0; int n = 0;
