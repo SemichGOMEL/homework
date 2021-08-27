@@ -1,5 +1,7 @@
 package Ex2;
 
+import com.sun.jdi.connect.Transport;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -17,7 +19,7 @@ public class Main {
         map.put(Country.RUSSIA,new Point(33,44));
         map.put(Country.UKRAINE,new Point(5,3));
         map.put(Country.PITER,new Point(4,40));
-        a[0] = new Aircraft(350,2000,45,245,5,"Airbus");
+        a[0] = new Aircraft(350,2000,45,4000,5,"Airbus");
         a[1] = new Aircraft(1000,8000,70,600,20,"Ил76");
         a[2] = new Aircraft(3000,12320,99,950,25,"як40");
         a[1].calcrange();
