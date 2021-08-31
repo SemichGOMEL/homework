@@ -11,6 +11,10 @@ import static java.lang.Math.sqrt;
 public class Main {
     static Aircraft[] a = new Aircraft[3];
     public static void main(String[] args) {
+        Planer Igor = new Planer(33,450,3,0,0,"afla");
+        // Igor.setPassangers(2);
+        System.out.println(Igor);
+        System.out.println(Igor.passang);
         Point flight1 = new Point(0,0);
         Point flight2 = new Point(0,0);
         Map<Country, Point> map = new HashMap<Country, Point>();

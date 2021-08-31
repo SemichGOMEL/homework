@@ -6,7 +6,17 @@ import static java.lang.String.valueOf;
 
 public class Main {
     public static void main(String[] args) {
-        StringBuilder str = new StringBuilder("gomel-grodno");
+        String b = "hello";
+        String l = ",";
+        String z = "bye";
+        char str2[] = new char[10];
+        int k = 31231;
+        System.out.println(b.substring(0,2));
+        System.out.println(b.replace("h","j"));
+        b.getChars(0,5, str2 ,0);
+        System.out.println(str2);
+        System.out.println(b.concat(z));
+        StringBuilder str = new StringBuilder("ABCDEFGHL");
         System.out.println(str.length());
         revers(str);
         System.out.println(str);

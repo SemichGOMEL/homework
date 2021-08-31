@@ -15,6 +15,8 @@ public class Air {
         this.names = names;
     }
 
+
+
     public int allweight(){
         return this.capacity + this.weight;
     }
